@@ -1,0 +1,9 @@
+.bgColor-SideBar{
+    background: #F4F4F4;
+}
+.format-SideBar{
+    width: 64px;
+    height: 100%;
+    position: relative;
+    right: 20px;
+}

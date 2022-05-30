@@ -1,0 +1,26 @@
+.bgColor-Black{
+    background: #020202;
+}
+.nav, .content-account{
+    margin: 28px;
+    color: white;
+}
+.hello-name{
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .hello-name{
+        font-size: 0.8rem;
+    }
+    .nav img{
+        width: 80px;
+    }
+    .arrow-icon img{
+        position: relative;
+        top: -3px;
+    }
+  }

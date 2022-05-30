@@ -1,0 +1,50 @@
+<form>
+    <div class="control border-width">
+        <div class="col-md-7">
+            <div class="margin-top-28">
+                <label class="title">Fase teste prático Front_end</label>
+                <br />
+                <label class="caption">pokebusca</label>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="search-position">
+                <input type="text" placeholder="Buscar" (input)="search($event)" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row col-md-12 border-width" *ngFor="let pokemon of pokemons |
+        paginate:{
+            id: 'listing_pagination',
+            itemsPerPage: 5, 
+            currentPage: page, 
+            totalItems: totalRecords
+        }">
+            <div class="item-img col-md-2 col">
+                <img src="../../../../assets/image 2.png" />
+            </div>
+
+            <div class="col col-md-9 item-text">
+                <h3>{{pokemon.name}}</h3>
+                <label>
+                    Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
+                    tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum
+                    et dui in aliquam.
+                </label>
+            </div>
+        </div>
+
+    </div>
+    <div class="btn-position col-md-12">
+        <pagination-controls 
+            id="listing_pagination" 
+            (pageChange)="page = $event" 
+            previousLabel="Previous"
+            nextLabel="Next">
+        </pagination-controls>
+    </div>
+</form>

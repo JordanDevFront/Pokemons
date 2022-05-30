@@ -1,0 +1,98 @@
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+}
+.control{
+    display: flex;
+    align-items: center;
+}
+.row{
+    margin-top: 20px;
+    position: relative;
+    right: 87px;
+}
+.text{
+    margin-left: 10px;
+}
+.search-position{
+    text-align: right;
+}
+.search-position input{
+    margin-right: 20px;
+}
+.caption{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 44px;
+}
+.margin-top-28{
+    margin-top: 28px;
+}
+.item-text{
+    margin-left: 45px;
+}
+.search-position input{
+    box-sizing: border-box;
+    bottom: 81.55%;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+.btn-position{
+    margin-top: 20px;
+}
+.border-width{
+    border-bottom: 1px solid rgba(46, 46, 46, 0.233);
+    padding: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .row{
+        position: relative;
+        right: 0px;
+    }
+    .item-text{
+        margin-left: 0px;
+    }
+    .title{
+        font-size: 1.1rem;
+        line-height: 24px;
+    }
+    .caption{
+        font-size: 1.1rem;
+    }
+    .control{
+        display: block;
+        align-items: center;
+    }
+    .search-position{
+        margin-right: 20px;
+        margin: 10px;
+    }
+    .search-position input{
+        width: 250px;
+    }
+    .control-card{
+        display: block;
+        left: 50%;
+        margin-left: -100px;
+        position: absolute;
+        width: 200px;
+        padding: 0px;
+    }
+    .img{
+        width: 180px;
+        height: 150px;
+    }
+    .item-img img{
+        width: 214px;
+        height: 210px;
+    }
+    .item-text label{
+        font-size: 0.8rem;
+    }
+  }
